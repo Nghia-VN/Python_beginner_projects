@@ -193,21 +193,21 @@ while True:
 total = principle * pow((1 + rate / 100), time)
 print(f"Balance after {time} year/s: ${total:.2f}")"""
 # for loops
-'''
+"""
 for x in range(2, 18):
     if x == 13:
         continue
     else:
         print(x)
-    '''
-    # countdown project
+    """
+# countdown project
 import time
+
 my_time = int(input("Enter the time: "))
 for x in range(my_time, 0, -1):
-        seconds = x % 60
-        minutes = int(x / 60) % 60
-        hours = int(x / 3600)
-        print(f"{hours:02}:{minutes:02}:{seconds:02}")
-        time.sleep(1)
+    seconds = x % 60
+    minutes = int(x / 60) % 60
+    hours = int(x / 3600)
+    print(f"{hours:02}:{minutes:02}:{seconds:02}")
+    time.sleep(1)
 print("Time's up")
-
